@@ -1,6 +1,7 @@
 1.put NaiveBayes_td.jar into C:\jar
 2.put tieu_duong.csv into C:\hadoop-3.3.0
-3.run this command:
+3.add all hadoop library into JAR (like in K-Means)
+4.run this command:
 start-all
 jps
 hdfs dfs -mkdir /tieuduong-input
