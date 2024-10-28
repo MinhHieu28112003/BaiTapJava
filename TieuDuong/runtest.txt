@@ -1,9 +1,0 @@
-1.put NaiveBayes_td.jar into C:\jar
-2.put tieu_duong.csv into C:\hadoop-3.3.0
-3.add all hadoop libraries into JAR file (like in K-Means)
-4.run this command:
-start-all
-jps
-hdfs dfs -mkdir /tieuduong-input
-hadoop fs -put C:\hadoop-3.3.0\tieu_duong.csv /tieuduong-input
-hadoop jar C:\jar\NaiveBayes_td.jar TieuDuong -D num_mappers="3" -D num_reducers="1" -D delimiter="," -D input="/tieuduong-input/tieu_duong.csv" -D output="/output_td" -D continousVariables="1,2,3,4" -D targetVariable="5" -D numColumns="5"
